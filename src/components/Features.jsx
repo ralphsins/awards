@@ -9,8 +9,7 @@ const BentoTilt = ({ children, className = "" }) => {
   const itemRef = useRef(null);
   const handleMouseMove = (e) => {
     if (!itemRef.current) return;
-    const { left, top, width, height } =
-      itemRef.current.getBoundingClientRect();
+    const { left, width } = itemRef.current.getBoundingClientRect();
 
     const relativeX = (e.clientX - left) / width;
     const relativeY = (e.clientY - left) / width;

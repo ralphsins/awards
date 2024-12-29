@@ -1,5 +1,3 @@
- 
-
 // eslint-disable-next-line react/prop-types
 const Button = ({ title, id, rightIcon, leftIcon, containerClass }) => {
   return (
@@ -10,9 +8,7 @@ const Button = ({ title, id, rightIcon, leftIcon, containerClass }) => {
       >
         {leftIcon}
         <span className="relative inline-flex overflow-hidden font-general text-xs uppercase">
-<div >
-    {title}
-</div>
+          <div>{title}</div>
         </span>
         {rightIcon}
       </button>
